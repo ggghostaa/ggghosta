@@ -1,0 +1,15 @@
+ggghost:
+  name: ggghost
+  version: 1.0.0
+  copyright-year: 2030
+  demo-enabled: true
+server:
+  port: 8001
+  servlet:
+    context-path: /
+  tomcat:
+    uri-encoding: UTF-8
+    accept-count: 1000
+    threads:
+      max: 800
+      min-spare: 100

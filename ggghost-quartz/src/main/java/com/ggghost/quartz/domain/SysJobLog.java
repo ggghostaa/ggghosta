@@ -1,7 +1,7 @@
 package com.ggghost.quartz.domain;
 
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.core.domain.BaseEntity;
+import com.ggghost.common.annotation.Excel;
+import com.ggghost.common.core.domain.BaseEntity;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
