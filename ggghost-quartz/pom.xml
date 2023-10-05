@@ -8,7 +8,6 @@
     </parent>
 
     <artifactId>ggghost-quartz</artifactId>
-    <packaging>jar</packaging>
 
     <name>ggghost-quartz</name>
     <url>http://maven.apache.org</url>
