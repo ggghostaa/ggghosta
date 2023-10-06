@@ -6,6 +6,4 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SysSecurityService {
-    @Autowired
-    RedisCache redisCache;
 }

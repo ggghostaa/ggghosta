@@ -13,8 +13,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class SysLoginServiceImpl implements SysLoginService {
-    @Autowired
-    RedisCache redisCache;
+
     public String login(String username, String password, String code, String uuid) {
         //验证码校验
         validateCaptcha(username, code, uuid);
