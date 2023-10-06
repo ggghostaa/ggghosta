@@ -1,6 +1,7 @@
 package com.ggghost.framework.system.controller;
 
 import com.ggghost.common.core.domain.AjaxResult;
+import com.ggghost.common.core.redis.RedisCache;
 import com.ggghost.framework.system.dao.SysUserDao;
 import com.ggghost.framework.system.entity.SysUser;
 import com.ggghost.framework.system.model.LoginBody;
@@ -17,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class SysLoginController {
+    @Autowired
+    RedisCache redisCache;
     @Autowired
     SysLoginService sysLoginService;
 

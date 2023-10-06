@@ -1,6 +1,8 @@
 package com.ggghost.framework.system.service.impl;
 
+import com.ggghost.common.core.redis.RedisCache;
 import com.ggghost.framework.system.service.SysLoginService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
@@ -11,6 +13,8 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class SysLoginServiceImpl implements SysLoginService {
+    @Autowired
+    RedisCache redisCache;
     public String login(String username, String password, String code, String uuid) {
         //验证码校验
         validateCaptcha(username, code, uuid);
