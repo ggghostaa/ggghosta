@@ -1,9 +1,9 @@
 package com.ggghost.framework.system.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.ruoyi.common.annotation.Excel;
-import com.ruoyi.common.annotation.Excel.ColumnType;
-import com.ruoyi.common.core.domain.BaseEntity;
+import com.ggghost.common.annotation.Excel;
+import com.ggghost.common.annotation.Excel.ColumnType;
+import com.ggghost.common.core.domain.BaseEntity;
 
 import java.util.Date;
 
