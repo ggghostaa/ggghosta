@@ -1,4 +1,4 @@
-package com.ggghost.framework.system.service;
+package com.ggghost.framework.system.service.impl;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -1,5 +1,6 @@
-package com.ggghost.framework.system.service;
+package com.ggghost.framework.system.service.impl;
 
+import com.ggghost.framework.system.service.SysLoginService;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
@@ -9,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @create 2023/9/24 22:34
  */
 @Component
-public class SysLoginServiceImpl implements SysLoginService{
+public class SysLoginServiceImpl implements SysLoginService {
     public String login(String username, String password, String code, String uuid) {
         //验证码校验
         validateCaptcha(username, code, uuid);

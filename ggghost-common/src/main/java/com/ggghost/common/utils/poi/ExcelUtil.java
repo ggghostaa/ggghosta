@@ -9,7 +9,6 @@ import com.ggghost.common.core.domain.AjaxResult;
 import com.ggghost.common.core.text.Convert;
 import com.ggghost.common.exception.UtilException;
 import com.ggghost.common.utils.DateUtils;
-import com.ggghost.common.utils.DictUtils;
 import com.ggghost.common.utils.StringUtils;
 import com.ggghost.common.utils.file.FileTypeUtils;
 import com.ggghost.common.utils.file.FileUtils;
@@ -1212,7 +1211,8 @@ public class ExcelUtil<T>
      */
     public static String convertDictByExp(String dictValue, String dictType, String separator)
     {
-        return DictUtils.getDictLabel(dictType, dictValue, separator);
+        return null;
+//        return DictUtils.getDictLabel(dictType, dictValue, separator);
     }
 
     /**
@@ -1225,7 +1225,8 @@ public class ExcelUtil<T>
      */
     public static String reverseDictByExp(String dictLabel, String dictType, String separator)
     {
-        return DictUtils.getDictValue(dictType, dictLabel, separator);
+        return null;
+//        return DictUtils.getDictValue(dictType, dictLabel, separator);
     }
 
     /**

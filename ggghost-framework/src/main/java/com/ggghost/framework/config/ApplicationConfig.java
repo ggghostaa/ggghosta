@@ -17,7 +17,7 @@ import java.util.TimeZone;
  */
 @Configuration
 @EnableAspectJAutoProxy(exposeProxy = true)
-@MapperScan("com.ggghost.**.mapper")
+//@MapperScan("com.ggghost.mapper.framework.system")
 public class ApplicationConfig {
 
     /**
