@@ -1,11 +1,9 @@
 package com.ggghost.framework.system.controller;
 
 import com.ggghost.common.core.domain.AjaxResult;
-import com.ggghost.common.core.redis.RedisCache;
 import com.ggghost.framework.system.dao.SysUserDao;
-import com.ggghost.framework.system.entity.SysUser;
 import com.ggghost.framework.system.model.LoginBody;
-import com.ggghost.framework.system.service.SysLoginService;
+import com.ggghost.framework.system.service.ISysLoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SysLoginController {
 
     @Autowired
-    SysLoginService sysLoginService;
+    ISysLoginService ISysLoginService;
 
     @Autowired
     SysUserDao sysUserDao;
@@ -28,7 +26,7 @@ public class SysLoginController {
     @PostMapping("/login")
     public AjaxResult login(@RequestBody LoginBody loginBody) {
         //生成令牌
-        String token = sysLoginService.login(loginBody.getUsername(), loginBody.getPassword(), loginBody.getCode(), loginBody.getUuid());
+        String token = ISysLoginService.login(loginBody.getUsername(), loginBody.getPassword(), loginBody.getCode(), loginBody.getUuid());
         AjaxResult ajax = new AjaxResult();
         ajax.put("token", token);
         return ajax;

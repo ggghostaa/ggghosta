@@ -1,8 +1,6 @@
 package com.ggghost.framework.system.service.impl;
 
-import com.ggghost.common.core.redis.RedisCache;
-import com.ggghost.framework.system.service.SysLoginService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ggghost.framework.system.service.ISysLoginService;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
@@ -12,7 +10,7 @@ import org.springframework.stereotype.Component;
  * @create 2023/9/24 22:34
  */
 @Component
-public class SysLoginServiceImpl implements SysLoginService {
+public class ISysLoginServiceImpl implements ISysLoginService {
 
     public String login(String username, String password, String code, String uuid) {
         //验证码校验

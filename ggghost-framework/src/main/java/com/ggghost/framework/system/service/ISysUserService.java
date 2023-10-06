@@ -7,5 +7,5 @@ import com.ggghost.framework.system.entity.SysUser;
  * @author ggghost
  * @create 2023/10/6 12:26
  */
-public interface SysUserService extends IService<SysUser> {
+public interface ISysUserService extends IService<SysUser> {
 }
