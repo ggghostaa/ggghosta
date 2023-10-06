@@ -44,7 +44,7 @@
         <result property="dataScope"    column="data_scope"     />
         <result property="status"       column="role_status"    />
     </resultMap>
-    <select id="getById"  resultMap="SysUserResult">
-        select * from sys_user u, sys_dept d where user_id = #{user_id} and u.dept_id = d.dept_id
+    <select id="getByName"  resultMap="SysUserResult">
+        select * from sys_user u, sys_dept d where user_name = #{userName} and u.dept_id = d.dept_id
     </select>
 </mapper>

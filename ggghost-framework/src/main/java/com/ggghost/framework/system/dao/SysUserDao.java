@@ -13,5 +13,5 @@ import org.springframework.stereotype.Component;
 @Mapper
 @Component
 public interface SysUserDao extends BaseMapper<SysUser> {
-    SysUser getById(@Param("user_id") long l);
+    SysUser getByName(@Param("userName") String userName);
 }

@@ -1,7 +1,5 @@
 package com.ggghost.framework.system.controller;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.ggghost.common.core.domain.AjaxResult;
 import com.ggghost.framework.system.dao.SysUserDao;
 import com.ggghost.framework.system.entity.SysUser;
@@ -9,7 +7,6 @@ import com.ggghost.framework.system.model.LoginBody;
 import com.ggghost.framework.system.service.SysLoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,8 +34,6 @@ public class SysLoginController {
 
     @RequestMapping("test")
     public String test() {
-        SysUser sysUser = sysUserDao.getById(1L);
-        System.out.println(sysUser.toString());
         System.out.println("======================");
         return "hello";
     }
